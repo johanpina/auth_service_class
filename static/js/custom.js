@@ -48,7 +48,7 @@ function handleSignupSubmit(event) {
         cel: document.getElementById('tel').value,
     };
     // Enviar los datos como JSON
-    fetch('http://127.0.0.1:8000/users/', {
+    fetch('https://auth-service-class-j4m0.onrender.com/users/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function handleLoginSubmit(event) {
         password: document.getElementById('password').value
     };
     // Enviar los datos como JSON
-    fetch('http://127.0.0.1:8000/auth/login/', {
+    fetch('https://auth-service-class-j4m0.onrender.com/auth/login/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -89,4 +89,5 @@ function handleLoginSubmit(event) {
     })
     .then(data => console.log(data))
     .catch(error => console.error('Error:', error));
-}
+
+} // handleLoginSubmit
