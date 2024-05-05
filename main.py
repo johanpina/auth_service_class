@@ -36,6 +36,8 @@ templates = Jinja2Templates(directory="templates")
 
 
 
+
+
 # Rutas de la API
 
 @app.get("/")
